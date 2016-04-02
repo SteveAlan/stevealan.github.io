@@ -1,0 +1,161 @@
+@font-face {
+    font-family: "Segoe UI Light";
+    src: url('img/segoeui-l.ttf');
+}
+
+/*Library*/
+
+img.avatar {
+    border-radius: 50%;
+}
+
+/*Topic*/
+div.part {
+    margin-bottom: 6px;
+    width: 66%;
+    padding-top: 5px;
+    padding-left: 15px;
+    padding-bottom: 10px;
+    padding-right: 5px;
+    background: #eceeec;
+    border: 2px black;
+    font-family: sans-serif,serif;
+}
+
+/*Layout*/
+.nav {             
+    border: 0;
+    padding-top: 0.35cm;
+    font: caption;
+    font-family: monospace;
+    font-size: 0.5cm;
+    background-color: #494b49;
+    height: 1cm;
+    width: 100%;
+    margin-top: 0;
+}
+div.footer {
+    background: #ccffff;
+    font-family: monospace,serif;
+    margin: 2px;
+    padding: 5px;
+    text-align: center;
+    clear: both;
+    font-size: 0.3cm;
+    padding-bottom: 3px;
+}
+div.sizebar{
+    text-align: center;
+    font-family: sans-serif;
+    padding: 10px;
+    float: right;
+    clear: both;
+    margin: 0.25cm;
+    background: #cbcbcb;
+    border: 2px #828282;
+    width: 30%;
+    height: 100%;
+}
+div.cont{  
+    padding-top: 0.5cm;
+    padding: 0.25cm;
+    font-family: sans-serif;    
+}
+
+/*Menu*/
+
+ul.menu {
+    float: right;
+    margin: 0;
+    padding-right: 10px;
+}
+a.menu{
+    border-right: 0;
+    margin-right: 0;
+    text-align: center;
+    align-content: center;
+    padding-bottom: 15px;
+    padding-top: 13px;
+    padding-left: 10px;
+    padding-right: 10px;
+    text-decoration: none;   
+    color: #dfd8d8;
+    
+    transition: 0.4s;
+}
+a:hover.menu{    
+      transition: 0.4s;
+    background: #66ff66;
+    color: #494b49;
+}
+a:focus.menu{
+    background-color: #66ff66;
+    color: #494b49;
+}
+a.now{
+    border-right: 0;
+    margin-right: 0;
+    text-align: center;
+    align-content: center;
+    padding-bottom: 15px;
+    padding-top: 13px;
+    padding-left: 8px;
+    padding-right: 8px;
+    text-decoration: none; 
+    background-color: #66ff66;
+    color: #494b49;
+}
+li.menu {
+    display: inline;
+    height: 1cm;
+    padding-bottom: 10px;
+}
+
+/*Form*/
+.inputCSS {
+    font-size: 21px;
+    border: 1px solid;
+    border-collapse: collapse;
+    border-radius: 7px;
+    border-color: #494b49;
+    height: 1cm; width: 9cm;
+    padding-left: 10px;
+    padding-right: 10px;
+    transition: 0.2s;    
+}
+.inputCSS:hover {
+    font-size: 21px;
+    transition: 0.2s;
+    border: 1px solid;
+    border-collapse: collapse;
+    border-color: #080808;
+    box-shadow: 5px 5px 1px #828282;
+}
+
+.buttonCSS {
+    cursor: pointer;
+    margin: 16px;
+    font-size: 16px;
+    align-content: center;
+    height: 0.8cm; width: 6cm;
+    font-family: sans-serif,serif,monospace;
+    border: 1px solid;
+    border-color: #3276b1;
+    border-radius: 6px;
+    background-color: #269abc;
+    color: #ccffff;
+    transition: 0.3s;
+    transition-property: background, color;
+    box-shadow: 2px 2px 1px #828282;
+}
+.buttonCSS:hover {
+    transition: 0.3s;
+    background: #dfffff;
+    color: #3276b1;
+}
+.buttonCSS:active{
+    background: #dfffff;
+    color: #3276b1;
+    box-shadow: 0px 0px 0px #fff;
+    
+}
