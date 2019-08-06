@@ -1,2 +1,2 @@
 # stevealan.github.io
-My about website
+My Portpolio and self presentation webpage
