@@ -1,0 +1,231 @@
+@font-face{
+    font-family: "SuperLight";
+    src: url(../fonts/TitilliumWeb-Thin.ttf);
+}
+@font-face {
+    font-family: "Super";
+    src: url(../fonts/TitilliumWeb-Light.ttf);
+}
+
+
+body {
+    margin: 0;
+    padding: 0;
+    font-family: sans-serif;  
+    max-height: 100%;
+    max-width: 100%;
+}
+
+header {
+    display: block; 
+}
+
+.solid-btn {
+    text-align: center;
+    align-content: center;
+    transition: 0.2s;
+    border: 2px solid white;   
+    color: white;
+    background-color: transparent;
+    outline: none;
+}
+
+
+.solid-btn:hover {
+    color: black;
+    background-color: white;
+}
+
+.menubar {
+    background-color: black;
+    color: white;
+    
+    opacity: 0.7;
+    font-family: "Segoe UI Light";
+    
+    position: fixed;
+    top:0;
+    width: 100%;
+    overflow: hidden;
+    z-index: +1;
+}
+
+.menubar h1 {
+    float: left;
+    font-size: 22px;
+    margin-left: 1rem;
+    font-family: "Segoe UI Light";
+}
+
+.more-btn {
+    float: right;
+    font-size: 20px;
+    margin: 5px;
+    border-radius: 100%;
+    padding: 7px;
+    width: 20px;
+    height: 20px;
+    margin-top: 10px;
+    margin-right: 1rem;
+}
+
+.dropdown {
+    float:right;
+    position: relative;
+}
+
+.dropdown-container {
+    display: none;
+    position: static;
+    z-index: 1;
+    
+    color: black;
+    font-size: 16px;
+
+    padding-right: 1rem;
+    
+    width: auto;
+}
+    
+.dropdown:hover .dropdown-container {
+    display: inline;
+}
+
+.dropdown:hover .solid-btn {
+    color: black;
+    background-color: white;    
+}
+
+.dropdown-container a {
+    padding: 18px;
+    padding-bottom: 14px;
+    
+    text-decoration: none;
+    color: white;
+    display: inline-block;
+    text-align: center;
+    margin: 0;
+}
+
+.dropdown-container a:hover {
+    border-bottom: 1px solid white;
+}
+
+/* ----------------------------- */
+
+.header-container {
+    
+    width: auto;
+    height: auto;
+    
+    margin: 0;
+    
+    padding-left: 8%;
+    padding-top: 14%;
+    padding-bottom: 19%;
+    
+    
+    color: white;   
+    
+    background-color: gray;
+    background-image:url(../img/bg.jpg);
+    background-attachment: fixed;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center center;
+    
+    
+}
+
+.header-container h1{
+    margin: 0;
+    padding:0;
+    font-family: "SuperLight";
+    font-weight: 100;
+    font-size: 80px;
+    color: white;   
+}
+
+.header-container h2{
+    margin-top: 1rem;
+    padding: 0;
+    font-family: "Super";
+    font-weight: 100;
+    font-size: 24px;
+    max-width: 500px;
+}
+
+.header-container a {
+    margin: 1rem;
+    padding: 15px;
+    font-size: 20px;
+    font-family: "Segoe UI";
+    border-radius: 60px;
+    width: 160px;
+}
+
+#hirenow-button {
+    margin-left: 0;
+    margin-right: 2rem;  
+}
+
+.filler{
+    width: 100%;
+    height: 100%;
+    margin-top:100%;
+    display: block;
+}
+
+.content-container {
+    margin: 0;
+    padding:0;
+    display: block;
+    color: black;
+    background-color: azure;
+    z-index: 0;
+}
+
+.text-container {
+    margin: 0;
+    padding: 4rem;
+    display: inline-block;
+    width: auto;
+    max-width: 50%;
+}
+
+.text-container p {
+    font-family: "Segoe UI";
+    font-weight: lighter;
+    font-size: 20px;
+    text-align: justify;
+    display: block;
+}
+
+.text-title {
+    font-family: "SuperLight";
+    font-weight: lighter;
+    font-size: 50px;
+    display: block;
+    border-bottom: 2px solid black;
+    padding:0;
+    margin-top:0;
+    padding-bottom: 30px;
+    width: 50%;
+}
+
+.left-side-image {
+    margin: 0;
+    padding: 0;
+    border:0;
+    float:left;
+    width: 33%;
+    overflow: hidden;
+    background: rgba(32,56,21,0.5);
+    z-index: 1;
+}
+
+.left-side-image img {
+    width: 100%;
+    z-index: -1;
+}
+
