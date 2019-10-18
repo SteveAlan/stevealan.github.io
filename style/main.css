@@ -6,19 +6,90 @@
     font-family: "Super";
     src: url(../fonts/TitilliumWeb-Light.ttf);
 }
+@font-face{
+    font-family: "AppleTitle"; src: url(../fonts/SFProDisplaySemibold.ttf);
+}
 
+/* ________ Tags ________ */
 
 body {
+    width: 100%;
     margin: 0;
     padding: 0;
     font-family: sans-serif;  
-    max-height: 100%;
-    max-width: 100%;
+    max-width: 100vw;
+}
+
+div {
+    max-width: 100vw;
+}
+
+section {
+    width: 100%;
+    left: 0;
+    display: flex;
+    background-color: white;
+    margin: 0;
+    padding: 0;
+    min-width: 100%;
+    max-width: 100vw;
+    height: auto;
+    position: static;
+    flex-direction: column;
+    flex-wrap: wrap;
+    
+    justify-content: center;
+    align-items: center;
+    align-content: center;
 }
 
 header {
-    display: block; 
+    width: 100%;
+    height: 100vh;
+    display: block;
+    top:0;
+    left:0;
+    
+    box-sizing: border-box;
+    
+    color: white;   
+    
+    background-color: gray;
+    background-image:url(../img/bg.jpg);
+    background-attachment: fixed;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center center;
 }
+
+/* ________ IDs ________ */
+
+#summary{   
+    background-image: url('../img/avatar.jpg');
+    background-repeat:no-repeat;
+    background-attachment: fixed;
+    background-position: left;
+    background-size: 100vh auto;
+}
+
+#expertises{
+    margin: 0;
+    padding: 0;
+    
+    background: linear-gradient(90deg, rgba(105,10,113,1) 0%, rgba(97,25,159,1) 35%, rgba(45,95,143,1) 65%, rgba(0,212,255,1) 100%);
+}
+
+#contact{
+    height: 100vh;
+    margin: 0;
+    padding: 0;
+    background-image: url('../img/macbook.png');
+    background-position: right center;
+    background-size: auto 40vw;
+    background-repeat: no-repeat;
+}
+
+/* ________ Classes ________ */
 
 .solid-btn {
     text-align: center;
@@ -113,27 +184,13 @@ header {
 
 /* ----------------------------- */
 
+
+
 .header-container {
-    
-    width: auto;
-    height: auto;
-    
     margin: 0;
-    
-    padding-left: 8%;
-    padding-top: 14%;
-    padding-bottom: 19%;
-    
-    
-    color: white;   
-    
-    background-color: gray;
-    background-image:url(../img/bg.jpg);
-    background-attachment: fixed;
-    background-size: cover;
-    background-repeat: no-repeat;
-    background-position: center center;
-    
+    padding: 4rem;
+    padding-left: 10vw;
+    padding-top: 20vh;
     
 }
 
@@ -162,6 +219,7 @@ header {
     font-family: "Segoe UI";
     border-radius: 60px;
     width: 160px;
+    text-decoration: none;
 }
 
 #hirenow-button {
@@ -176,21 +234,18 @@ header {
     display: block;
 }
 
-.content-container {
-    margin: 0;
-    padding:0;
-    display: block;
-    color: black;
-    background-color: azure;
-    z-index: 0;
-}
+
 
 .text-container {
+    left: 0;
     margin: 0;
     padding: 4rem;
-    display: inline-block;
-    width: auto;
-    max-width: 50%;
+}
+
+.stick-right {
+    float: right;
+    width: 49vw;
+    margin-left: 40vw;
 }
 
 .text-container p {
@@ -198,34 +253,187 @@ header {
     font-weight: lighter;
     font-size: 20px;
     text-align: justify;
-    display: block;
 }
 
-.text-title {
+.title {
     font-family: "SuperLight";
     font-weight: lighter;
     font-size: 50px;
     display: block;
+    letter-spacing: 5px;
     border-bottom: 2px solid black;
+    
     padding:0;
-    margin-top:0;
+    padding-top:0;
     padding-bottom: 30px;
+    
+    margin-top: 0;
+
     width: 50%;
 }
 
-.left-side-image {
+.content-container {
     margin: 0;
-    padding: 0;
-    border:0;
-    float:left;
-    width: 33%;
-    overflow: hidden;
-    background: rgba(32,56,21,0.5);
-    z-index: 1;
-}
-
-.left-side-image img {
+    padding: 0; 
     width: 100%;
-    z-index: -1;
 }
 
+.title-cardset {
+    width: 100%;
+    min-width: 100%;
+    height: 100%;
+    text-align: center;
+}
+
+.title-center {
+    
+    width: 375px;
+    
+    display: inline-flex;
+        
+    justify-content: center;
+    text-align: center;
+    
+    letter-spacing: 7px;
+    font-family: "SuperLight";
+    font-weight: lighter;
+    font-size: 60px;
+    
+    border-bottom: 1px solid white;
+    
+    padding-bottom:6vh;
+    margin-top: 2em;
+    margin-bottom: 1em  ;
+    
+    color: whitesmoke;
+}
+
+.title-formal {
+    display: flex;
+    letter-spacing: 2px;
+    font-family: "AppleTitle";
+    font-weight: bolder;
+    font-size: 55px;
+}
+
+.text-margin {
+    width: 45vw;
+    float: left;
+    max-width: 50vw;
+}
+
+.contact-container {
+    font-family: "Segoe UI";
+    font-size: 20px;
+    
+    padding-top: 1em;
+    padding-bottom: 2em;
+    
+    display: flex;
+    flex-direction: column;
+}
+
+.contact-container span {
+   margin-bottom: 5px;
+}
+
+.contact-container span a {
+    margin-left: 1em;
+    text-decoration: none;
+    color: black;
+    letter-spacing: 1px;
+}
+
+.contact-container span a:hover {
+    font-weight: bold;
+    text-shadow: 
+}
+
+/* _________ Cards ________ */
+
+.card-set {
+    
+    width: 95vw;
+    height: auto;
+    
+    max-width: 100vw;
+    
+    padding: 0;
+    margin: 0;
+    
+    padding-bottom: 2em;
+    
+    display: flex;
+    
+    align-items: center;
+    text-align: center;
+    justify-content: center;
+    
+    flex-wrap: wrap;  
+    
+}
+
+.exp-card {
+    
+    background-color: ghostwhite;
+    
+    width: 200px;
+    height: 300px;
+    
+    background-color: white;
+    border-radius: 10px;
+    
+    border: 5px black;
+    box-shadow: 0px 5px 5px black;
+    padding: 30px;
+    margin: 2em;
+    
+    align-content: left;
+    text-align: left;
+    
+    transition: 0.6s;
+}
+
+.exp-card:hover {
+    transition: 0.3s;
+    transform: translateY(-10px);
+    box-shadow: 0px 7px 15px 2px black;
+}
+
+.card-title {
+    font-family: 'Segoe UI';
+    font-size: 24px;
+    font-weight: 800;
+    letter-spacing: 1px;
+    color: #1F1F1F;
+    margin:0;
+}
+
+.card-content {
+    font-family: 'Segoe UI';
+    font-size: 14px;
+}
+
+.card-icon {
+    width: 120px;
+    height: 120px;  
+    justify-content: center;
+    align-items: center;
+    align-content: center;
+    text-align: center;
+}
+
+.card-props {
+    width: 100%;
+    text-align: right;
+    float: right;
+    font-size: 16px;
+}
+
+.card-props i {
+    float: left;
+}
+
+.exp-java {
+    
+}
